@@ -1,0 +1,19 @@
+{
+  "name": "graphql-101",
+  "version": "1.0.0",
+  "description": "A GraphQL 101 event repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexSwed/graphql-101.git"
+  },
+  "author": "lexswed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LexSwed/graphql-101/issues"
+  },
+  "homepage": "https://github.com/LexSwed/graphql-101#readme"
+}
