@@ -3,6 +3,11 @@ const { gql } = require('apollo-server');
 module.exports = gql`
   type Query {
     pipelines: [Pipeline!]!
+    deal(id: ID!, filters: FiltersInput): Deal!
+  }
+
+  input FiltersInput {
+    userId: ID!
   }
 
   interface Node {
@@ -37,9 +42,15 @@ module.exports = gql`
     status: DealStatus
     title: String!
     updateTime: String
+    valueObject: DealValue
     value: Int
     wonTime: String
-    pipeline: Pipeline
+  }
+
+  type DealValue {
+    number: Int!
+    currency: String!
+    combined: String!
   }
 
   type Stage implements Node {
@@ -68,5 +79,10 @@ module.exports = gql`
     DELETED
     WON
     LOST
+  }
+
+  type Person {
+    fullName: String
+    firstTwoLetters: String
   }
 `;
