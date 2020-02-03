@@ -2,8 +2,9 @@
   "name": "graphql-101",
   "version": "1.0.0",
   "description": "A GraphQL 101 event repo",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/LexSwed/graphql-101/issues"
   },
-  "homepage": "https://github.com/LexSwed/graphql-101#readme"
+  "homepage": "https://github.com/LexSwed/graphql-101#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.16",
+    "graphql": "^14.6.0"
+  }
 }
