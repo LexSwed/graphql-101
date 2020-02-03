@@ -1,9 +1,12 @@
 const { ApolloServer } = require('apollo-server');
 
 const typeDefs = require('./schema');
-const resolvers = require('./resolvers');
 
-const server = new ApolloServer({ typeDefs, resolvers, mocks: true, mockEntireSchema: false });
+const server = new ApolloServer({
+  typeDefs,
+  mocks: true,
+  mockEntireSchema: false
+});
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
