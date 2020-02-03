@@ -4,7 +4,7 @@
   "description": "A GraphQL 101 event repo",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "nodemon --watch server server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "dependencies": {
     "apollo-server": "^2.9.16",
     "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
