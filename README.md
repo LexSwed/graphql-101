@@ -2,6 +2,8 @@
 
 This repo provides code needed for the Breakfast & Code event at Pipedrive
 
-## Start here
+## Client setup
 
-https://www.apollographql.com/docs/apollo-server/getting-started/
+```bash
+npm install
+```
