@@ -9,5 +9,5 @@
     "jsx": "react",
     "moduleResolution": "node"
   },
-  "exclude": ["node_modules", ".cache"]
+  "include": ["node_modules", "server", "dist", ".cache"]
 }
