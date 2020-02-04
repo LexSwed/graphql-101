@@ -16,7 +16,6 @@ const getPipelines = gql`
 
 const App: React.FC = () => {
   const { loading, data } = useQuery(getPipelines);
-  const client = useApolloClient();
 
   if (loading) {
     return <div>I'm loading!</div>;
