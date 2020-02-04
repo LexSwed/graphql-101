@@ -1,5 +1,5 @@
 import React from 'react';
-import { useQuery, gql, useApolloClient } from '@apollo/client';
+import { useQuery, gql } from '@apollo/client';
 import Deal from './Deal';
 
 const getPipelines = gql`
